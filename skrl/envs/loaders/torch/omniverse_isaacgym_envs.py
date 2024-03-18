@@ -153,10 +153,10 @@ def load_omniverse_isaacgym_env(task_name: str = "",
     config_path = os.path.join(omniisaacgymenvs_path, "cfg")
 
     # set omegaconf resolvers
-    OmegaConf.register_new_resolver('eq', lambda x, y: x.lower() == y.lower())
-    OmegaConf.register_new_resolver('contains', lambda x, y: x.lower() in y.lower())
-    OmegaConf.register_new_resolver('if', lambda condition, a, b: a if condition else b)
-    OmegaConf.register_new_resolver('resolve_default', lambda default, arg: default if arg == '' else arg)
+    # OmegaConf.register_new_resolver('eq', lambda x, y: x.lower() == y.lower())
+    # OmegaConf.register_new_resolver('contains', lambda x, y: x.lower() in y.lower())
+    # OmegaConf.register_new_resolver('if', lambda condition, a, b: a if condition else b)
+    # OmegaConf.register_new_resolver('resolve_default', lambda default, arg: default if arg == '' else arg)
 
     # get hydra config without use @hydra.main
     config_file = "config"
