@@ -240,7 +240,7 @@ def load_omniverse_isaacgym_env(task_name: str = "",
 
     # load environment
     sys.path.append(omniisaacgymenvs_path)
-    from utils.task_util import initialize_task  # type: ignore
+    from omniisaacgymenvs.utils.task_util import initialize_task  # type: ignore
 
     try:
         if config.multi_gpu:
